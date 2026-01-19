@@ -1,0 +1,11 @@
+
+! + Tab
+
+RUN PROJECT
+Right-click index.html → Open with Live Server
+
+GIT WORKFLOW
+git status
+git add .
+git commit -m "what I did"
+git push
