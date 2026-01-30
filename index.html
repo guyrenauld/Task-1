@@ -3,14 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Task 1</title>
 </head>
 <body>
-    <div class="dashboard">
-  <aside class="sidebar">Left box</aside>
-  <main class="content">Middle box</main>
-  <aside class="right-panel">Right box</aside>
+<div class="dashboard">
+
+  <aside class="sidebar">
+  <!-- Profile -->
+  <div class="profile">
+    <img src="https://randomuser.me/api/portraits/lego/2.jpg" alt="AR Shakir" class="avatar">
+    <div class="profile-info">
+      <h3>AR Shakir</h3>
+      <p>Sr. Visual Designer</p>
+    </div>
+  </div>
+
+  <!-- Menu Header -->
+  <p class="menu-header">Menu</p>
+
+  <!-- Menu Items -->
+  <ul class="menu">
+    <li>
+      <span class="icon">
+        <!-- Tasks icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+      </span>
+      My Tasks
+    </li>
+
+    <li>
+      <span class="icon">
+        <!-- Inbox icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+          <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+        </svg>
+      </span>
+      Inbox
+    </li>
+
+    <li>
+      <span class="icon">
+        <!-- Projects icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+      </span>
+      Projects
+    </li>
+
+    <li class="active">
+      <span class="icon">
+        <!-- Standups / Clock icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+      </span>
+      Standups
+    </li>
+
+    <li>
+      <span class="icon">
+        <!-- Meetings / Calendar icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+      </span>
+      Meetings <span class="badge">5</span>
+    </li>
+
+    <li>
+      <span class="icon">
+        <!-- Settings icon -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82V9a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0 1.82.33l.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </span>
+      Settings
+    </li>
+  </ul>
+
+<div class="favorites-section">
+  <p class="favorites-title">Favorites</p>
+
+  <ul class="favorites-list">
+    <li class="favorite-item">
+      <span class="fav-icon">   ⭕ </span>
+      <span class="fav-text">Redwhale Design</span>
+    </li>
+
+    <li class="favorite-item">
+      <span class="fav-icon"> ⭕</span>
+      <span class="fav-text">Mobile App Mockups</span>
+    </li>
+
+    <li class="favorite-item">
+      <span class="fav-icon"> ⭕</span>
+      <span class="fav-text">UI Design Assets</span>
+    </li>
+  </ul>
 </div>
 
+<button class="add-btn">+</button>
+
+<p class="sidebar-footer">2021 All Tasks License</p>
+
+
+</aside>
+
+
+
+  <main class="center">
+    <header class="top-bar">
+       <h1>Hi Shakir!</h1>
+<div class="task-progress">
+  <span class="progress-text">15% task completed</span>
+
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+</div>
+
+    </header>
+
+  <div class="cards">
+    <div class="card">
+       <div class="featured-card-header">
+    <div class="featured-card-icon">💡</div>
+    <span class="menu">⋯</span>
+  </div>
+
+      <h3>R&D for New Banking
+        Mobile App
+      </h3>
+      <div class="featured-card-footer">
+                            <div class="avatar-stack">
+                                <img src="https://picsum.photos/seed/1/32/32" alt="Avatar">
+                                <img src="https://picsum.photos/seed/2/32/32" alt="Avatar">
+                                <img src="https://picsum.photos/seed/3/32/32" alt="Avatar">
+                            </div>
+                        </div>
+    </div>
+
+
+    <div class="card2">
+       <div class="featured-card-header">
+         <span class="featured-card-icon">🔍</span>
+         </div>
+      <h3 class="create">Create Signup Page</h3>
+      <div class="featured-card-footer">
+                            <div class="avatar-stack">
+                                <img src="https://picsum.photos/seed/1/32/32" alt="Avatar">
+                                <img src="https://picsum.photos/seed/2/32/32" alt="Avatar">
+                                <img src="https://picsum.photos/seed/3/32/32" alt="Avatar">
+                            </div>
+                        </div>
+    </div>
+  </div>
+
+
+<div class="tasks-header">
+  <h2>Monthly Tasks</h2>
+
+  <div class="action-buttons">
+    <button class="archive-btn">Archive</button>
+    <button class="new-btn">+ New</button>
+  </div>
+</div>
+
+
+<div class="tabs-row">
+  <div class="tabs">
+    <button class="tab active">Active Tasks</button>
+    <button class="tab">Completed</button>
+  </div>
+
+  <div class="tasks-search">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+    <input 
+      type="text"
+      class="search-input"
+      placeholder="Search"/>
+  </div>
+</div>
+
+ 
+  
+
+
+
+  
+  <p class="tasks-header">Today</p>
+ 
+
+
+<div class="task-row">
+  <div class="icon uber-bg">
+    <div class="logo-shape"></div> 
+  </div>
+  <div class="task-info">
+    <h3>Uber</h3>
+    <p>App Design and Upgrades with new features - In Progress 15 days</p>
+  </div>
+  <div class="avatar-stack">
+    <img src="https://randomuser.me/api/portraits/women/48.jpg">
+    <img src="https://randomuser.me/api/portraits/men/85.jpg">
+    <img src="https://randomuser.me/api/portraits/men/4.jpg">
+  </div>
+</div>
+
+
+<div class="task-row">
+  <div class="icon facebook-bg">
+    <div class="logo-shape fb-logo"></div> 
+  </div>
+  <div class="task-info">
+    <h3>Facebook Ads</h3>
+    <p>Facebook Ads Design for CreativeCloud - Last worked 5 days ago</p>
+  </div>
+  <div class="avatar-stack">
+    <img src="https://randomuser.me/api/portraits/men/83.jpg">
+    <img src="https://randomuser.me/api/portraits/men/22.jpg">
+     <img src="https://randomuser.me/api/portraits/women/75.jpg">
+  </div>
+</div>
+
+
+<div class="task-row">
+  <div class="icon payoneer-bg">
+    <div class="logo-shape payoneer-logo"></div> 
+  </div>
+  <div class="task-info">
+    <h3>Payoneer</h3>
+    <p>Payoneer Dashboard Design - Due in 3 days</p>
+  </div>
+  <div class="avatar-stack">
+    <img src="https://randomuser.me/api/portraits/women/27.jpg">
+     <img src="https://randomuser.me/api/portraits/men/74.jpg">
+      <img src="https://randomuser.me/api/portraits/men/42.jpg">
+  </div>
+</div>
+
+<p class="tasks-header">Tomorrow</p>
+
+<div class="task-row">
+  <div class="icon upwork-bg">
+    <div class="logo-shape upwork-logo"></div> 
+  </div>
+ 
+
+
+
+  
+  
+   <div class="task-info">
+    <h3>Upwork</h3>
+    <p>Developing - Viewed Just Now - Assigned 10 min ago</p>
+  </div>
+  <div class="avatar-stack">
+    <img src="https://randomuser.me/api/portraits/women/79.jpg">
+     <img src="https://randomuser.me/api/portraits/men/90.jpg">
+      <img src="https://randomuser.me/api/portraits/women/42.jpg">
+  </div>
+
+</div>
+
+
+
+
+
+
+  </main>
+
+  <aside class="rightside">
+<div class="schedule-card">
+  <h3>Today's Schedule
+<div class="view-buttons">
+                            <div class="view-button" style="position: relative; overflow: hidden;">
+                                <!-- Grid Icon -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </div>
+                            <div class="view-button active" style="position: relative; overflow: hidden;">
+                                <!-- Calendar Icon -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                        </div>
+  </h3>
+</div>
+  <div>
+  <p class="mini-note">30 minute call with Client</p>
+
+  <div class="meeting">
+    <div class="meeting-info">
+      <h4>Project Discovery Call</h4>
+      <button class="invite-btn">+ Invite</button>
+    </div>
+
+    <div class="avatars">
+      <img src="https://i.pravatar.cc/30?img=12">
+      <img src="https://i.pravatar.cc/30?img=32">
+      <img src="https://i.pravatar.cc/30?img=5">
+      <span class="avatar-more">K</span>
+      <div class="timer">28:35</div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--progress-->
+<div class="progress-card">
+  <h4>Design Project</h4>
+  <p class="status in-progress">In Progress</p>
+
+  <div class="stats">
+    <div>
+        <p class="label">Completed</p>
+      <p class="number">114</p>
+    
+    </div>
+    <div>
+         <p class="label">In Progress</p>
+      <p class="number">24</p>
+    </div>
+
+      <!--teammate-->
+<div class="team-card">
+  <h4>Team members</h4>
+  <div class="team-avatars">
+    <img src="https://i.pravatar.cc/40?img=15">
+    <span class="letter-avatar">M</span>
+    <span class="letter-avatar">S</span>
+  </div>
+</div>
+   
+
+  </div>
+</div>
+
+
+<!--collaborators-->
+<div class="new-task-card">
+  <h4>New Task</h4>
+  <input type="text" placeholder="Task Title">
+  <input type="text" placeholder="Create new...">
+
+  <div class="emoji-picker">
+    <span>‹</span>
+    <span>🧐</span>
+    <span>👋</span>
+    <span>🙋‍♀️</span>
+    <span>😇</span>
+    <span>😁</span>
+    <span>🔥</span>
+    <span>🤩</span>
+    <span>›</span>
+  </div>
+
+  <p class="collab-title">Add Collaborators</p>
+
+  <div class="collaborators">
+    <div class="person">
+      <img src="https://i.pravatar.cc/35?img=25">
+      <span class="person-name">Angela</span>
+      <span class="remove">✕</span>
+    </div>
+    <div class="person">
+      <img src="https://i.pravatar.cc/35?img=30">
+      <span class="person-name">Chris</span>
+      <span class="remove">✕</span>
+    </div>
+    <button class="add-person">+</button>
+  </div>
+</div>
+
+<!---->
+
+  </aside>
+</div>
 </body>
 </html>
