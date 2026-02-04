@@ -123,15 +123,15 @@ body {
 }
 
 .active {
-  font-weight: bold;
-  color: #ff3535;
+  bold;
+   #ff3535
 }
 
 
 .active {
-  font-weight: bold;
-  color: #ff5454;
+   bold;
 }
+
 .favorites-section {
   margin-top: 30px;
   padding-bottom: 90px; 
@@ -422,7 +422,8 @@ body {
 
 .rightside {
   background: rgb(255, 255, 255);
-  padding: 20px;
+  
+  flex-direction: column; /* stack kids vertically inside */
 }
 
 .schedule{
@@ -577,7 +578,7 @@ body {
 .task-row {
   display: flex;         /* Line everything up side-by-side like a train */
   align-items: center;   /* Keep everyone's tummy on the same middle line */
-  margin-bottom: 20px;   /* Give each train car some room to move */
+  margin-bottom: 2px;   /* Give each train car some room to move */
   position: relative;
   overflow: hidden;
   transform: translateX(4px);
@@ -601,6 +602,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 
 /* 3. The Words */
 .task-info {
@@ -664,14 +666,14 @@ body {
   border-radius: 3px;
 }
 
-.right-panel {
+.rightside {
   width: 300px;
   background: #f7f8fc;
   padding: 20px;
   border-left: 1px solid #e5e7eb;
   display: flex;
-
-  gap: 20px;
+flex-direction: column; /* stack kids vertically inside */
+ 
 }
 
   
@@ -679,36 +681,31 @@ body {
 
 .team-card, 
 .new-task-card {
-  background: white;
+  
   padding: 15px;
   flex-direction: row;
-}
-
-.schedule-card{
-  justify-content: space-between; /* pushes them to opposite sides */
-  align-items: center;  
   
 }
-
-.icon-head{
-  margin-left: 60px;
-  font-size: 1px;
-  
-
+.schedule-header {
+  display: flex;                 /* line up title + icons in a row */
+  justify-content: space-between;/* text left, icons right */
+  align-items: center;           /* vertical alignment */
 }
 
 .view-buttons {
-  display: flex;
-  gap: 8px;
+  display: flex;                 /* line up icons */
+  gap: 4px;  
+  margin-left: 60px;                 
+  background-color: #d8d8d8;
+  border-radius: 14px;
+  padding: 4px 8px;
 }
 
-.view-button {
-  padding: 6px;
-  background: #F9FAFB;
-  border-radius: 8px;
-  color: #626262;
-  cursor: pointer;
-  transition: all 0.2s ease;
+.view-button svg {
+  display: block;                /* remove inline SVG spacing */
+  width: 16px;                   /* smaller, fit nicely */
+  height: 16px;
+  stroke: #7b7979;               /* grey color */
 }
 
 .schedule-card {
@@ -730,6 +727,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .invite-btn {
@@ -748,7 +746,7 @@ body {
   gap: 5px;
   margin: 10px 0;
   background-color: #4ce384;
-  padding: 8px 8px 8px 8px;
+  padding: 14px 8px 14px 8px;
   border-radius: 8px;
 }
 
@@ -777,39 +775,90 @@ body {
   margin-left: 20px;
 }
 
+
+
+.new-task-card{
+  margin-top: 30px;
+}
+
+
+
+.stats {
+  display: flex;               /* puts Completed & In Progress side by side */
+  justify-content: space-between;
+  margin-top: 40px;
+
+}
+
+
+
+
 .status.in-progress {
   color: rgb(141, 141, 141);
   font-weight: bold;
   font-size: 12px;
-}
-
-.stats {
- display: flex;
-  margin-top: 40px;
-  font-weight: bold;
-    display: flex;
-  justify-content: space-between; /* push first to left, last to right */
-  align-items: center;            /* center vertically */
+   display: flex;
+  gap: 20px;     
+  align-items: center; 
 }
 
 .number {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  display: inline-block; 
+   display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .label {
   font-size: 12px;
   color: gray;
   display: flex;
-  justify-content: space-between;
-  gap:10px;
+  flex-direction: row;
+  white-space: nowrap;
+  font-weight: bold;
+
 }
+.number {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Green bubble for 114 */
+.completed .number::after {
+  content: "";
+  position: absolute;
+  top: 3px;      /* moves bubble above */
+  right: -10px;   /* moves bubble to right */
+  width: 8px;
+  height: 8px;
+  background: limegreen;
+  border-radius: 50%;
+}
+
+/* Red bubble for 24 */
+.progress .number::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
 
 .team-avatars {
   display: flex;
   gap: 8px;
   margin-top: 10px;
+   align-items: center;
 }
+
 
 .team-avatars img,
 .letter-avatar {
@@ -822,15 +871,31 @@ body {
 .team-card{
   font-size: 14px;
   color: grey;
+    padding: 1px;
   
 }
 
 .new-task-card input {
-  width: 100%;
+  width:120px;
   padding: 8px;
   margin-bottom: 8px;
   border-radius: 8px;
   border: 1px solid #ddd;
+}
+
+.card-header{
+    font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px; /* space under the header */
+  color: #030303;
+}
+
+
+.task-subtitle {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 14px; /* space before input */
 }
 
 .emoji-picker {
@@ -843,6 +908,8 @@ body {
 .collab-title {
   font-size: 13px;
   margin: 10px 0 5px;
+  margin-bottom: 10px;
+  color: #464b51;
 }
 
 .collaborators {
