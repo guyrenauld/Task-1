@@ -210,7 +210,7 @@ body {
   font-size: 11px;
   color: #94a3b8;
   opacity: 0.6;
-  padding-left: 10px; /* lines it up nicely with items */
+  padding-left: 10px; 
 }
 
 
@@ -238,7 +238,7 @@ body {
 
 .progress-text {
   font-size: 14px;
-  color: #6B7280;             /* soft grey text */
+  color: #6B7280;            
 }
 
 .progress-bar {
@@ -250,7 +250,7 @@ body {
 }
 
 .progress-fill {
-  width: 15%;                 /* how full it is */
+  width: 15%;                 
   height: 100%;
   background: #e44fc2;         
   border-radius: 9999px;
@@ -358,7 +358,7 @@ body {
 
 
 .tasks-search svg {
-  position: absolute;       /* position on top of input */
+  position: absolute;       
   left: 10px;               /* distance from left edge */
   top: 50%;                 /* vertical center */
   transform: translateY(-50%);
@@ -594,10 +594,10 @@ body {
 
 /* 2. Painting the Uber Box */
 .uber-bg {
-  width: 44px;           /* How wide the toy is */
-  height: 44px;          /* How tall the toy is */
-  background: linear-gradient(135deg, #E1125A, #FF5A5F); /* A pretty sunset color */
-  border-radius: 12px;   /* Smooth the corners so they don't poke your fingers! */
+  width: 44px;       
+  height: 44px;          
+  background: linear-gradient(135deg, #E1125A, #FF5A5F); 
+  border-radius: 12px;   
   display: flex;         /* Put the white logo inside it */
   justify-content: center;
   align-items: center;
